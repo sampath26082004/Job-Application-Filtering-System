@@ -1,0 +1,120 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff6a00, #ffcc00, #ff3366, #00cc99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container to hold content */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff3366;
+}
+
+/* Form Elements Styling */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff3366;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff3366;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    margin-top: 5px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff6600;
+    background-color: #fffbf0;
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #ff3366;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6600;
+}
+
+/* Styling for the Shortlisted Candidates */
+h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff3366;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #00cc99;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul li:nth-child(odd) {
+    background-color: #ff3366;
+}
+
+ul li:hover {
+    background-color: #ff6600;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Application Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Filter</h1>
+
+        <form id="applicationForm">
+            <div class="input-group">
+                <label for="numApplications">Number of Applicants:</label>
+                <input type="number" id="numApplications" name="numApplications" required min="1">
+            </div>
+
+            <!-- Dynamic Applicant Input Fields Will Appear Here -->
+            <div id="applicationsInput"></div>
+
+            <div class="input-group">
+                <label for="requiredSkills">Required Skills (comma separated):</label>
+                <input type="text" id="requiredSkills" name="requiredSkills" required>
+            </div>
+
+            <div class="input-group">
+                <label for="minimumExperience">Minimum Experience (in years):</label>
+                <input type="number" id="minimumExperience" name="minimumExperience" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Shortlisted Candidates:</h2>
+        <ul id="shortlistedCandidates"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
